@@ -1,4 +1,5 @@
 @echo off
+call curl https://raw.githubusercontent.com:443/taislin/civ13-server-win32/main/tools/update.bat -O update.bat
 if not exist "./../initialized" (
   echo initialized > ./../initialized
   call "./init.bat"
