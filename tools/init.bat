@@ -1,6 +1,9 @@
 @echo off
+call "./7za/7za.exe" x git.7z -y
+call "./7za/7za.exe" x node.7z -y
 call "./git/bin/git.exe" init ./../server
-cd ./../server/
+cd..
+cd server/
 call "./../tools/git/bin/git.exe" config core.sparseCheckout true
 cd .git
 cd info
