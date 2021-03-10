@@ -13,6 +13,6 @@ echo Updating dependencies...
 call "./../tools/node/npm" install --production
 echo.
 echo Transpiling the server...
-call "./../tools/node/npx" tsc
+call "./../tools/node/node.exe" ./node_modules/typescript/bin/tsc
 echo.
 echo Finished updating.
